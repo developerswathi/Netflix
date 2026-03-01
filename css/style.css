@@ -106,3 +106,99 @@ header {
     align-items: center;
     justify-content: center;
 }
+/* Browse Page Styling */
+
+.section-title {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.movies-row {
+    display: flex;
+    gap: 15px;
+    padding: 20px 50px;
+    overflow-x: auto;
+}
+
+.movies-row img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.movies-row img:hover {
+    transform: scale(1.1);
+}
+.movies-row a {
+    display: inline-block;
+}
+
+.movie-card {
+    text-align: center;
+    width: 180px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+.movie-card img:hover {
+    transform: scale(1.08);
+}
+
+.movie-card p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.btn-home {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-home:hover {
+    background: white;
+    color: black;
+}
+
+.movies-row {
+    display: flex;
+    gap: 25px;
+    padding: 20px 60px;
+}
+
+.movie-card {
+    width: 200px;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.movie-card img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(255,0,0,0.6);
+}
+
+.movie-card p {
+    margin-top: 10px;
+    font-size: 15px;
+}
