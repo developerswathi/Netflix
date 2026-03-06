@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Netflix Login</title>
+<title>Login</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="login-body">
+<body>
+
+<h1 class="logo" style="padding:20px">NETFLIX</h1>
 
 <div class="login-box">
 
-<h1>Sign In</h1>
+<h2>Sign In</h2>
 
-<input type="text" placeholder="Email or phone">
+<input type="text" placeholder="Email">
 
 <input type="password" placeholder="Password">
 
-<a href="browse.html">
-<button class="login-btn">Sign In</button>
-</a>
+<button onclick="login()">Sign In</button>
 
 </div>
+
+<script>
+
+function login(){
+window.location.href="browse.html";
+}
+
+</script>
 
 </body>
 </html>

@@ -1,34 +1,220 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <title>Netflix</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="home-body">
+<body>
 
-<header>
+<header class="navbar">
 <h1 class="logo">NETFLIX</h1>
-<a href="login.html" class="btn">Sign In</a>
+
+<div class="nav-right">
+<select class="lang">
+<option>English</option>
+</select>
+
+<a href="#" class="signin">Sign In</a>
+</div>
 </header>
 
 
-<section class="banner">
+<!-- HERO SECTION -->
 
-<div class="banner-content">
+<section class="hero">
 
-<h1>Unlimited movies, TV shows and more</h1>
+<div class="overlay"></div>
 
-<p>Watch anywhere. Cancel anytime.</p>
+<div class="hero-content">
 
-<a href="browse.html">
-<button class="start-btn">Get Started</button>
-</a>
+<h1>Unlimited movies,<br>shows, and more</h1>
+
+<h3>Starts at ₹149. Cancel at any time.</h3>
+
+<p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+<div class="email-box">
+<input type="text" placeholder="Email address">
+<button class="start-btn">Get Started ></button>
+</div>
 
 </div>
 
 </section>
+
+
+<!-- TRENDING MOVIES -->
+
+
+<section class="trending">
+
+<h2>Trending Now</h2>
+
+<div class="movie-container">
+
+<button class="scroll-btn left" onclick="scrollLeft()">❮</button>
+
+<div class="movies" id="movieRow">
+
+<a href="https://www.youtube.com/watch?v=YoHD9XEInc0" target="_blank">
+<img src="https://image.tmdb.org/t/p/w300/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg">
+</a>
+
+<a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" target="_blank">
+<img src="https://image.tmdb.org/t/p/w300/q719jXXEzOoYaps6babgKnONONX.jpg">
+</a>
+
+<a href="https://www.youtube.com/watch?v=TcMBFSGVi1c" target="_blank">
+<img src="https://image.tmdb.org/t/p/w300/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg">
+</a>
+
+<a href="https://www.youtube.com/watch?v=sfM7_JLk-84" target="_blank">
+<img src="https://image.tmdb.org/t/p/w300/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
+</a>
+
+<a href="https://www.youtube.com/watch?v=Q0CbN8sfihY" target="_blank">
+<img src="https://image.tmdb.org/t/p/w300/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg">
+</a>
+
+</div>
+
+<button class="scroll-btn right" onclick="scrollRight()">❯</button>
+
+</div>
+
+</section>
+<!-- REASONS -->
+
+<section class="reasons">
+
+<h2>More reasons to join</h2>
+
+<div class="reason-grid">
+
+<div class="card">
+<h3>Enjoy on your TV</h3>
+<p>Watch on smart TVs, PlayStation, Xbox, Chromecast and more.</p>
+</div>
+
+<div class="card">
+<h3>Download your shows</h3>
+<p>Save your favourites easily and always have something to watch.</p>
+</div>
+
+<div class="card">
+<h3>Watch everywhere</h3>
+<p>Stream unlimited movies and shows on your phone and TV.</p>
+</div>
+
+<div class="card">
+<h3>Create profiles for kids</h3>
+<p>Send kids on adventures with their favourite characters.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-box">
+<button class="faq-question">What is Netflix?</button>
+<div class="faq-answer">
+Netflix is a streaming service that offers movies, TV shows and more.
+</div>
+</div>
+
+<div class="faq-box">
+<button class="faq-question">How much does Netflix cost?</button>
+<div class="faq-answer">
+Plans start at ₹149 per month.
+</div>
+</div>
+
+<div class="faq-box">
+<button class="faq-question">Where can I watch?</button>
+<div class="faq-answer">
+You can watch on mobile, laptop, smart TV and tablet.
+</div>
+</div>
+
+<div class="faq-box">
+<button class="faq-question">How do I cancel?</button>
+<div class="faq-answer">
+You can cancel anytime from your account settings.
+</div>
+</div>
+
+<div class="faq-box">
+<button class="faq-question">What can I watch on Netflix?</button>
+<div class="faq-answer">
+You can watch movies, series, documentaries and Netflix originals.
+</div>
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<p>Questions? Call 000-800-919-1743</p>
+
+<div class="footer-links">
+
+<a href="#">FAQ</a>
+<a href="#">Help Centre</a>
+<a href="#">Account</a>
+<a href="#">Media Centre</a>
+
+<a href="#">Investor Relations</a>
+<a href="#">Jobs</a>
+<a href="#">Ways to Watch</a>
+<a href="#">Terms of Use</a>
+
+<a href="#">Privacy</a>
+<a href="#">Cookie Preferences</a>
+<a href="#">Corporate Information</a>
+<a href="#">Contact Us</a>
+
+</div>
+
+<p class="country">Netflix India</p>
+
+</footer>
+
+<script>
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach((q)=>{
+q.addEventListener("click",()=>{
+q.nextElementSibling.classList.toggle("show");
+});
+});
+
+</script>
+
+<script>
+
+const row = document.getElementById("movieRow");
+
+function scrollLeft(){
+row.scrollLeft -= 400;
+}
+
+function scrollRight(){
+row.scrollLeft += 400;
+}
+
+</script>
 
 </body>
 </html>
