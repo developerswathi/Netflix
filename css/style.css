@@ -25,7 +25,7 @@ padding:20px;
 /* home */
 
 .banner{
-background-image:url("../images/bg.jpg");
+background-image:url("./netfliximages/");
 height:90vh;
 background-size:cover;
 display:flex;
