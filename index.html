@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <title>Netflix</title>
@@ -6,6 +7,10 @@
 </head>
 
 <body>
+
+<div id="loader">
+<h1>N</h1>
+</div>
 
 <header class="navbar">
 <h1 class="logo">NETFLIX</h1>
@@ -15,12 +20,12 @@
 <option>English</option>
 </select>
 
-<a href="#" class="signin">Sign In</a>
+<a href="signin.html" class="signin">Sign In</a>
+
 </div>
 </header>
 
-
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -30,92 +35,74 @@
 
 <h1>Unlimited movies,<br>shows, and more</h1>
 
-<h3>Starts at ₹149. Cancel at any time.</h3>
+<h3>Starts at ₹149. Cancel anytime.</h3>
 
-<p>Ready to watch? Enter your email to create or restart your membership.</p>
+<p>Ready to watch? Enter your email to create or restart membership.</p>
 
 <div class="email-box">
 <input type="text" placeholder="Email address">
+
+<a href="opening.html">
 <button class="start-btn">Get Started ></button>
+</a>
+
 </div>
 
 </div>
 
 </section>
 
-
 <!-- TRENDING MOVIES -->
-
 
 <section class="trending">
 
 <h2>Trending Now</h2>
 
-<div class="movie-container">
-
-<button class="scroll-btn left" onclick="scrollLeft()">❮</button>
-
 <div class="movies" id="movieRow">
 
-<a href="https://www.youtube.com/watch?v=YoHD9XEInc0" target="_blank">
-<img src="https://image.tmdb.org/t/p/w300/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg">
-</a>
+<img src="https://image.tmdb.org/t/p/w300/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg" onclick="playMovie('YoHD9XEInc0')">
 
-<a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" target="_blank">
-<img src="https://image.tmdb.org/t/p/w300/q719jXXEzOoYaps6babgKnONONX.jpg">
-</a>
+<img src="https://image.tmdb.org/t/p/w300/q719jXXEzOoYaps6babgKnONONX.jpg" onclick="playMovie('6ZfuNTqbHE8')">
 
-<a href="https://www.youtube.com/watch?v=TcMBFSGVi1c" target="_blank">
-<img src="https://image.tmdb.org/t/p/w300/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg">
-</a>
+<img src="https://image.tmdb.org/t/p/w300/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" onclick="playMovie('TcMBFSGVi1c')">
 
-<a href="https://www.youtube.com/watch?v=sfM7_JLk-84" target="_blank">
-<img src="https://image.tmdb.org/t/p/w300/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
-</a>
+<img src="https://image.tmdb.org/t/p/w300/5P8SmMzSNYikXpxil6BYzJ16611.jpg" onclick="playMovie('8ugaeA-nMTc')">
 
-<a href="https://www.youtube.com/watch?v=Q0CbN8sfihY" target="_blank">
-<img src="https://image.tmdb.org/t/p/w300/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg">
-</a>
+<img src="https://image.tmdb.org/t/p/w300/2CAL2433ZeIihfX1Hb2139CX0pW.jpg" onclick="playMovie('zSWdZVtXT7E')">
 
-</div>
+<img src="https://image.tmdb.org/t/p/w300/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" onclick="playMovie('vKQi3bBA1y8')">
 
-<button class="scroll-btn right" onclick="scrollRight()">❯</button>
+<img src="https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg" onclick="playMovie('JfVOs4VSpmA')">
 
-</div>
+<img src="https://image.tmdb.org/t/p/w300/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg" onclick="playMovie('EXeTwQWrcwY')">
 
-</section>
-<!-- REASONS -->
+<img src="https://image.tmdb.org/t/p/w300/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" onclick="playMovie('giXco2jaZ_4')">
 
-<section class="reasons">
+<img src="https://image.tmdb.org/t/p/w300/2TeJfUZMGolfDdW6DKhfIWxt5XY.jpg" onclick="playMovie('RXoL4Q8g5WI')">
 
-<h2>More reasons to join</h2>
+<img src="https://image.tmdb.org/t/p/w300/cezWGskPY5x7GaglTTRN4Fugfb8.jpg" onclick="playMovie('U0CL-ZSuCrQ')">
 
-<div class="reason-grid">
+<img src="https://image.tmdb.org/t/p/w300/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg" onclick="playMovie('pKctjlxbFDQ')">
 
-<div class="card">
-<h3>Enjoy on your TV</h3>
-<p>Watch on smart TVs, PlayStation, Xbox, Chromecast and more.</p>
-</div>
+<img src="https://image.tmdb.org/t/p/w300/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg" onclick="playMovie('sfM7_JLk-84')">
 
-<div class="card">
-<h3>Download your shows</h3>
-<p>Save your favourites easily and always have something to watch.</p>
-</div>
+<img src="https://image.tmdb.org/t/p/w300/6CoRTJTmijhBLJTUNoVSUNxZMEI.jpg" onclick="playMovie('Q1NKMPhP8PY')">
 
-<div class="card">
-<h3>Watch everywhere</h3>
-<p>Stream unlimited movies and shows on your phone and TV.</p>
-</div>
-
-<div class="card">
-<h3>Create profiles for kids</h3>
-<p>Send kids on adventures with their favourite characters.</p>
-</div>
+<img src="https://image.tmdb.org/t/p/w300/fMMrl8fD9gRCFJvsx0SuFwkEOop.jpg" onclick="playMovie('8hP9D6kZseM')">
 
 </div>
 
 </section>
 
+<!-- VIDEO POPUP -->
+
+<div class="popup" id="videoPopup">
+
+<span class="close" onclick="closeVideo()">×</span>
+
+<iframe id="movieFrame" src="" allowfullscreen></iframe>
+
+</div>
 
 <!-- FAQ -->
 
@@ -125,94 +112,81 @@
 
 <div class="faq-box">
 <button class="faq-question">What is Netflix?</button>
-<div class="faq-answer">
-Netflix is a streaming service that offers movies, TV shows and more.
-</div>
+<div class="faq-answer">Netflix is a streaming service with movies and TV shows.</div>
 </div>
 
 <div class="faq-box">
 <button class="faq-question">How much does Netflix cost?</button>
-<div class="faq-answer">
-Plans start at ₹149 per month.
-</div>
+<div class="faq-answer">Plans start at ₹149 per month.</div>
 </div>
 
 <div class="faq-box">
 <button class="faq-question">Where can I watch?</button>
-<div class="faq-answer">
-You can watch on mobile, laptop, smart TV and tablet.
-</div>
+<div class="faq-answer">Watch on mobile, TV, tablet or laptop.</div>
 </div>
 
 <div class="faq-box">
 <button class="faq-question">How do I cancel?</button>
-<div class="faq-answer">
-You can cancel anytime from your account settings.
-</div>
-</div>
-
-<div class="faq-box">
-<button class="faq-question">What can I watch on Netflix?</button>
-<div class="faq-answer">
-You can watch movies, series, documentaries and Netflix originals.
-</div>
+<div class="faq-answer">You can cancel anytime.</div>
 </div>
 
 </section>
 
+<!-- CONTACT -->
 
-<!-- FOOTER -->
+<section class="contact">
 
-<footer class="footer">
+<h2>Contact Netflix</h2>
 
 <p>Questions? Call 000-800-919-1743</p>
+<p>Email: support@netflix.com</p>
 
-<div class="footer-links">
+</section>
 
-<a href="#">FAQ</a>
-<a href="#">Help Centre</a>
-<a href="#">Account</a>
-<a href="#">Media Centre</a>
-
-<a href="#">Investor Relations</a>
-<a href="#">Jobs</a>
-<a href="#">Ways to Watch</a>
-<a href="#">Terms of Use</a>
-
-<a href="#">Privacy</a>
-<a href="#">Cookie Preferences</a>
-<a href="#">Corporate Information</a>
-<a href="#">Contact Us</a>
-
-</div>
-
-<p class="country">Netflix India</p>
-
+<footer class="footer">
+<p>Netflix India</p>
 </footer>
 
 <script>
 
-const questions = document.querySelectorAll(".faq-question");
+window.addEventListener("load",function(){
 
-questions.forEach((q)=>{
-q.addEventListener("click",()=>{
-q.nextElementSibling.classList.toggle("show");
+setTimeout(function(){
+document.getElementById("loader").style.display="none";
+},2000);
+
 });
-});
 
-</script>
+function playMovie(id){
 
-<script>
+document.getElementById("videoPopup").style.display="flex";
 
-const row = document.getElementById("movieRow");
+document.getElementById("movieFrame").src=
+"https://www.youtube.com/embed/"+id;
 
-function scrollLeft(){
-row.scrollLeft -= 400;
 }
 
-function scrollRight(){
-row.scrollLeft += 400;
+function closeVideo(){
+
+document.getElementById("videoPopup").style.display="none";
+
+document.getElementById("movieFrame").src="";
+
 }
+
+const slider=document.getElementById("movieRow");
+
+setInterval(function(){
+
+slider.scrollLeft+=220;
+
+if(slider.scrollLeft>=slider.scrollWidth-slider.clientWidth){
+
+slider.scrollLeft=0;
+
+}
+
+},2000);
 
 </script>
 
